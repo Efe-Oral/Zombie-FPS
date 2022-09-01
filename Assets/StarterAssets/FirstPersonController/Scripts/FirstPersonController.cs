@@ -130,6 +130,7 @@ namespace StarterAssets
 			}
 		}
 
+
 		private void Move()
 		{
 			// set target speed based on move speed, sprint speed and if sprint is pressed
