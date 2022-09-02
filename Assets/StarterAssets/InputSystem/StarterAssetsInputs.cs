@@ -12,7 +12,7 @@ namespace StarterAssets
 		public Vector2 look;
 		public bool jump;
 		public bool sprint;
-
+		
 		[Header("Movement Settings")]
 		public bool analogMovement;
 
@@ -45,10 +45,7 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
-		public void OnFire()
-		{
-			Debug.Log("FIRE!");
-		}
+
 #else
 	// old input sys if we do decide to have it (most likely wont)...
 #endif
