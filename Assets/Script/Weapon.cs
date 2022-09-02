@@ -8,6 +8,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] float range;
     [SerializeField] float damage = 10f;
     [SerializeField] ParticleSystem shootVFX;
+    [SerializeField] GameObject hitEffect;
 
     void Update()
     {
@@ -26,13 +27,13 @@ public class Weapon : MonoBehaviour
     {
         shootVFX.Play();
     }
-    
+
     private void ProcessRayCast()
     {
         RaycastHit hit;
         if(Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range))
         {
-            print(hit.transform.name + " has been hit.");
+            CreateHitImpact(hit);
             EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
             if(target == null) // if we hit a thing with no tag ignore it.
             {
@@ -45,5 +46,10 @@ public class Weapon : MonoBehaviour
             //EnemyHealth.FindObjectOfType<EnemyHealth>().TakeDamage(damage);
         }
         else { return; }
+    }
+    private void CreateHitImpact(RaycastHit hit)
+    {
+        GameObject impact = Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
+        Destroy(impact, 0.1f);
     }
 }

@@ -1288,10 +1288,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2366526341685116906, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.095
-      objectReference: {fileID: 0}
     - target: {fileID: 3664431601605649408, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1339,18 +1335,6 @@ PrefabInstance:
     - target: {fileID: 4148234776192220858, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4360110740521425061, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4360110740521425061, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8718341739342530493, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.20000005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
@@ -1505,6 +1489,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2667107997350023829, guid: c7d2ef08a5e9ad5409df68f8066dd7b9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 3893294199639930361}
     - target: {fileID: 5233016022644365386, guid: c7d2ef08a5e9ad5409df68f8066dd7b9, type: 3}
       propertyPath: m_Name
       value: Enemy
