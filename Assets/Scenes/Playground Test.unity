@@ -632,6 +632,19 @@ MonoBehaviour:
   zoomInSensitivity: 1
   zoomOutSensitivity: 5
   isZoomed: 1
+--- !u!114 &1001031169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001031162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34eaddb15f1a6040b7ffff69e74f8a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 8
 --- !u!1 &1028513131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1438,6 +1451,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 14829664, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 1001031169}
     - target: {fileID: 2104553788887276941, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
       propertyPath: gameOverCanvas
       value: 
