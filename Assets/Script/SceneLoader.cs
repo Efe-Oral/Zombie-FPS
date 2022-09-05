@@ -8,13 +8,12 @@ public class SceneLoader : MonoBehaviour
 
     public void PlayAgain()
     {
-        Debug.Log("RESTART!");
-        SceneManager.LoadScene(1);
+        //Debug.Log("RESTART!");
+        SceneManager.LoadScene(0);
     }
 
     public void Quit()
     {
         Debug.Log("QUITING");
-        print("QUIT!");
     }
 }

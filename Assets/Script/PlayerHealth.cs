@@ -9,14 +9,15 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         hitPoints = hitPoints - damage;
-          if( hitPoints <= 0)
-        {
-            Die();
-        }
+        isDead();
     }
 
-    void Die()
-    {
-        Debug.Log("PLAYER IS DEAD");
+    public bool isDead()
+    {   
+        if(hitPoints <= 0)
+        {
+            return true;
+        } 
+        return false;
     }
 }
