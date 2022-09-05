@@ -12,12 +12,11 @@ public class PlayerHealth : MonoBehaviour
         isDead();
     }
 
-    public bool isDead()
+    public void isDead()
     {   
         if(hitPoints <= 0)
         {
-            return true;
+            GetComponent<DeathHandler>().HandleDeath();
         } 
-        return false;
     }
 }

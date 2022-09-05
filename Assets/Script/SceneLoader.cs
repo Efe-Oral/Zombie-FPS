@@ -8,8 +8,9 @@ public class SceneLoader : MonoBehaviour
 
     public void PlayAgain()
     {
-        //Debug.Log("RESTART!");
         SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+        
     }
 
     public void Quit()

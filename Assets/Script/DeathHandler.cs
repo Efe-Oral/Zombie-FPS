@@ -5,27 +5,19 @@ using UnityEngine;
 public class DeathHandler : MonoBehaviour
 {
     [SerializeField] Canvas gameOverCanvas;
-    PlayerHealth playerHealth;
 
     void Start()
     {
         //Locking the cursor after dying and restarting the game
-        Cursor.lockState = CursorLockMode.Locked;
-        playerHealth = GetComponent<PlayerHealth>();
         gameOverCanvas.enabled = false;
-    }
-
-    void Update()
-    {
-        if(playerHealth.isDead())
-        {
-            HandleDeath();
-        }
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void HandleDeath()
     {
         gameOverCanvas.enabled = true;
+        Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
