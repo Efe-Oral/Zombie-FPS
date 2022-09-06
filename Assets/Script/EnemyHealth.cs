@@ -10,7 +10,7 @@ public class EnemyHealth : MonoBehaviour
     {
         BroadcastMessage("OnDamageTaken");
         hitPoints = hitPoints - damage;
-        print("Target has been hit " + hitPoints);
+        //print("Target has been hit " + hitPoints);
         if(hitPoints <= 0)
         {
             Die();
