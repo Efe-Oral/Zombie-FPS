@@ -10,19 +10,25 @@ public class Weapon : MonoBehaviour
     [SerializeField] ParticleSystem shootVFX;
     [SerializeField] GameObject hitEffect;
     [SerializeField] Ammo ammoSlot;
+    [SerializeField] AmmoType ammoType;
     [SerializeField] float timeBetweenShots = 0.5f;
 
     bool canShoot = true;
 
+    void OnEnable()
+    {
+        canShoot = true;
+    }
+
     void Update()
     {
-        if(Input.GetMouseButtonDown(0) && ammoSlot.GetCurrentAmmo()> 0 && canShoot)
+        if(Input.GetMouseButtonDown(0) && ammoSlot.GetCurrentAmmo(ammoType)> 0 && canShoot)
         {
             StartCoroutine(Shoot());
-            ammoSlot.ReduceCurrentAmmo();
+            ammoSlot.ReduceCurrentAmmo(ammoType);
         }
     }
-    
+
     IEnumerator Shoot()
     {
         canShoot = false;
