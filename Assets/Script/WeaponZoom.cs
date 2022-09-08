@@ -15,6 +15,11 @@ public class WeaponZoom : MonoBehaviour
 
     public bool isZoomed = false;
 
+    private void OnDisable()
+    {
+        ZoomOut();
+    }
+
     void Update()
     {
         ZoomIn();
@@ -26,16 +31,22 @@ public class WeaponZoom : MonoBehaviour
         {
             if(isZoomed == true)
             {
-                POVCamera.m_Lens.FieldOfView = zoomIn;
+                POVCamera.m_Lens.FieldOfView = zoomOut;
+                firstPersonController.RotationSpeed = zoomOutSensitivity;
                 isZoomed = false;
-                firstPersonController.RotationSpeed = zoomInSensitivity;
             }
             else
             {
-                POVCamera.m_Lens.FieldOfView = zoomOut;
+                POVCamera.m_Lens.FieldOfView = zoomIn;
+                firstPersonController.RotationSpeed = zoomInSensitivity;
                 isZoomed = true;
-                firstPersonController.RotationSpeed = zoomOutSensitivity;
             }
         }
+    }
+    private void ZoomOut()
+    {
+        POVCamera.m_Lens.FieldOfView = zoomOut;
+        firstPersonController.RotationSpeed = zoomOutSensitivity;
+        isZoomed = false;
     }
 }
