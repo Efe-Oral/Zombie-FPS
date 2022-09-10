@@ -1637,7 +1637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8718341739342530490, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
       propertyPath: field of view
-      value: 40
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8718341739342530493, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2039,7 +2039,7 @@ PrefabInstance:
       objectReference: {fileID: 8338988565591873055}
     - target: {fileID: 8762286023885395323, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
       propertyPath: m_Lens.FieldOfView
-      value: 40
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8762286023885395323, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
       propertyPath: m_Lens.NearClipPlane

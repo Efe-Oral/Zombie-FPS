@@ -8,7 +8,7 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] Transform _target;
     [SerializeField] float chaseRange = 7f;
-    [SerializeField] float turnSpeed = 1f;
+    public float turnSpeed = 1f;
     NavMeshAgent _navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
