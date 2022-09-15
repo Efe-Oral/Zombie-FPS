@@ -38,4 +38,14 @@ public class FlashLight : MonoBehaviour
             myLight.intensity = 2;
         }
     }
+
+    public void RestoreLightAngle(float restoreAngle)
+    {
+        myLight.spotAngle += restoreAngle;
+    }
+
+    public void RestoreLightIntensity(float restoreIntensity)
+    {
+        myLight.intensity += restoreIntensity;
+    }
 }
