@@ -5272,6 +5272,25 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1123692891883277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3071476067787832140, guid: 0578787a945b19040a5bb7ed16ac6cb9, type: 3}
+  m_PrefabInstance: {fileID: 3072561930589912129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1123692891883278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123692891883277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470ffdabc761a7b4eab74ac71e62b32d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restoreAngle: 25
+  restoreIntensity: 2
 --- !u!4 &4130326466075211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3075187003590059530, guid: 0578787a945b19040a5bb7ed16ac6cb9, type: 3}
@@ -5298,7 +5317,7 @@ PrefabInstance:
       objectReference: {fileID: 765988735}
     - target: {fileID: 1756413638053145747, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
       propertyPath: m_Lens.FieldOfView
-      value: 25
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 2104553788887276941, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
       propertyPath: gameOverCanvas
@@ -5358,7 +5377,7 @@ PrefabInstance:
       objectReference: {fileID: 1509988648}
     - target: {fileID: 8718341739342530490, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
       propertyPath: field of view
-      value: 25
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}

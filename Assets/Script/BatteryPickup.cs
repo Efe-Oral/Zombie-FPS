@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Battery : MonoBehaviour
+public class BatteryPickup : MonoBehaviour
 {
     [SerializeField] float restoreAngle;
     [SerializeField] float restoreIntensity;
