@@ -401,7 +401,7 @@ PrefabInstance:
     - target: {fileID: 289705803299074111, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: ammoSlot
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1190811067}
     - target: {fileID: 1275502541658291559, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -527,7 +527,7 @@ PrefabInstance:
     - target: {fileID: 1790284175482813475, guid: 863b3ae547934254d9bf01ee5dbd2575, type: 3}
       propertyPath: ammoSlot
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1190811067}
     - target: {fileID: 1790284175482813475, guid: 863b3ae547934254d9bf01ee5dbd2575, type: 3}
       propertyPath: ammoType
       value: 1
