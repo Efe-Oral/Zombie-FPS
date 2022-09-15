@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9363858}
   m_Layer: 0
-  m_Name: ----------------Pickups-----------------
+  m_Name: Pickups
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -409,7 +409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 218595545}
   m_Layer: 0
-  m_Name: -------------------UI-------------------
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4192,7 +4192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1652068104}
   m_Layer: 0
-  m_Name: ----------------Enemies----------------
+  m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4876,7 +4876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8345070699079395523, guid: 09aade0ecefd01e4b8f7661acf64f5c2, type: 3}
       propertyPath: m_Name
-      value: ---------------Environment---------------
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 8345070699079395523, guid: 09aade0ecefd01e4b8f7661acf64f5c2, type: 3}
       propertyPath: m_IsActive
@@ -5296,6 +5296,10 @@ PrefabInstance:
       propertyPath: _canvas
       value: 
       objectReference: {fileID: 765988735}
+    - target: {fileID: 1756413638053145747, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
+      propertyPath: m_Lens.FieldOfView
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 2104553788887276941, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
       propertyPath: gameOverCanvas
       value: 
@@ -5346,12 +5350,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4148234776192220858, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
       propertyPath: m_Name
-      value: -----------------Player-----------------
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5440295375411311249, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
       propertyPath: ammoText
       value: 
       objectReference: {fileID: 1509988648}
+    - target: {fileID: 8718341739342530490, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
+      propertyPath: field of view
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f3f9f2070574f4e8fbab123f899261, type: 3}
 --- !u!108 &2114283754330233425 stripped
