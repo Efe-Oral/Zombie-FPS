@@ -10,8 +10,8 @@ public class WeaponZoom : MonoBehaviour
     [SerializeField] FirstPersonController firstPersonController;
     [SerializeField] float zoomOut = 40f;
     [SerializeField] float zoomIn = 25f;
-    [SerializeField] [Range(0.5f, 5.0f)]float zoomInSensitivity = 1f;
-    [SerializeField] [Range(0.5f, 5.0f)]float zoomOutSensitivity = 5f;
+    [SerializeField] [Range(0.1f, 5.0f)]float zoomInSensitivity = 1f;
+    [SerializeField] [Range(0.1f, 5.0f)]float zoomOutSensitivity = 5f;
 
     public bool isZoomed = false;
 
