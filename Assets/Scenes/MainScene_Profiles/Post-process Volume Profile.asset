@@ -21,10 +21,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.43
+    value: 1.5
   color:
     overrideState: 1
-    value: {r: 0.2924528, g: 0.0011035737, b: 0.0011035737, a: 1}
+    value: {r: 0.11320752, g: 0.0036311771, b: 0.0036311771, a: 1}
   ambientOnly:
     overrideState: 0
     value: 1
@@ -70,13 +70,13 @@ MonoBehaviour:
     value: 0
   intensity:
     overrideState: 1
-    value: 0.904
+    value: 0.94
   size:
     overrideState: 1
-    value: 1.49
+    value: 1.07
   lumContrib:
     overrideState: 1
-    value: 0.229
+    value: 0.57
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
